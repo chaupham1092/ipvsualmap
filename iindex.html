@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IP Location Visualizer</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>IP Location Visualizer</h1>
+    <textarea id="ipList" placeholder="Enter IPs, one per line"></textarea>
+    <button onclick="plotIPs()">Visualize IPs</button>
+    <button onclick="resetMap()">Reset</button>
+    <div id="map"></div>
+
+    <!-- Added headline for country stats -->
+    <h2>Country where the IPs are coming from. Click to reveal</h2>
+    <div id="countryStats">
+      <!-- Display stats of countries here -->
+    </div>
+
+    <div id="ipListFromCountry">
+      <!-- Display list of IPs from a selected country -->
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
