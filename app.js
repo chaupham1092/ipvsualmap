@@ -1,5 +1,5 @@
 // Load API key from environment file
-fetch("https://cerulean-smakager-682fcc.netlify.app/config.json")
+fetch("https://ipvsualmap.netlify.app/config.json")
   .then(response => response.json())
   .then(config => {
     const API_KEY = config.API_KEY;
