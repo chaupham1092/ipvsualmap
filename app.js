@@ -1,5 +1,5 @@
 // Load API key from environment file
-fetch("config.json")
+fetch("https://cerulean-smakager-682fcc.netlify.app/config.json")
   .then(response => response.json())
   .then(config => {
     const API_KEY = config.API_KEY;
