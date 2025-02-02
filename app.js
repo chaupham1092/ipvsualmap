@@ -1,5 +1,5 @@
 // Load API key from environment file
-fetch("https://chaupham1092.github.io/ipvsualmap/")
+fetch("https://raw.githubusercontent.com/chaupham1092/test/refs/heads/main/config.json?token=GHSAT0AAAAAAC56CEZVKY2VQWHH55CME6Q2Z466JCQ")
   .then(response => response.json())
   .then(config => {
     const API_KEY = config.API_KEY;
