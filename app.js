@@ -1,11 +1,12 @@
-// Load API key from environment file
-fetch("https://chaupham1092.github.io/ipvsualmap/config.json")
+// Load API key from the GitHub secret repo (raw link)
+fetch("https://raw.githubusercontent.com/chaupham1092/ipvsualmappiakey/refs/heads/main/config.json?token=GHSAT0AAAAAAC56CEZURENAEULXPAQSZQIEZ466ZKA")
   .then(response => response.json())
   .then(config => {
     const API_KEY = config.API_KEY;
     initApp(API_KEY);
   })
   .catch(error => console.error("Error loading API key:", error));
+
 
 let map;
 let markers = []; // Array to store markers for removal later
