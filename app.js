@@ -58,6 +58,8 @@ function initApp(API_KEY) {
 
         // Display country stats after adding each IP
         displayCountryStats();
+      }).fail(function() {
+        console.error("Error fetching data for IP:", ip);
       });
     });
   };
