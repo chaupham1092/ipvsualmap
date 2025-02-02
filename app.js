@@ -1,5 +1,5 @@
 // Load API key from the GitHub secret repo (raw link)
-fetch("https://raw.githubusercontent.com/chaupham1092/ipvsualmappiakey/refs/heads/main/config.json?token=GHSAT0AAAAAAC56CEZURENAEULXPAQSZQIEZ466ZKA")
+fetch("/.netlify/functions/get-api-key")
   .then(response => response.json())
   .then(config => {
     const API_KEY = config.API_KEY;
