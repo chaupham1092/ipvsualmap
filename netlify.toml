@@ -1,0 +1,9 @@
+[build]
+functions = "netlify/functions"
+And in root folder of Github, create netlify/functions (a folder netlify, then a sub folder functions), inside that create a get-api-key.js with this code:
+exports.handler = async function () {
+    return {
+        statusCode: 200,
+        body: JSON.stringify({ API_KEY: process.env.API_KEY })
+    };
+};
