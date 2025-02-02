@@ -1,5 +1,5 @@
 // Load API key from environment file
-fetch("https://raw.githubusercontent.com/chaupham1092/test/main/config.json")
+fetch("config.json")
   .then(response => response.json())
   .then(config => {
     const API_KEY = config.API_KEY;
